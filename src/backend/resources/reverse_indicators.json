@@ -1,0 +1,21 @@
+{
+  "ta.trend.sma_indicator": "SMA",
+  "ta.volume.acc_dist_index": "ADI",
+  "ta.momentum.rsi": "RSI",
+  "ta.others.cumulative_return": "CR",
+  "ta.volume.money_flow_index": "MFI",
+  "ta.momentum.roc": "ROC",
+  "ta.volume.volume_weighted_average_price": "VWAP",
+  "ta.volatility.average_true_range": "ATR",
+  "ta.volatility.bollinger_hband": "BB",
+  "ta.volatility.keltner_channel_hband": "KC",
+  "ta.trend.cci": "CCI",
+  "ta.trend.ema_indicator": "EMA",
+  "ta.trend.wma_indicator": "WMA",
+  "ta.others.daily_log_return": "DLR",
+  "ta.others.daily_return": "DR",
+  "ta.volatility.bollinger_lband": "BB",
+  "ta.volatility.bollinger_mavg": "BB",
+  "ta.volatility.keltner_channel_lband": "KC",
+  "ta.volatility.keltner_channel_mband": "KC"
+}

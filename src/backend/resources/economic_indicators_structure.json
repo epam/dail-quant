@@ -1,0 +1,142 @@
+{
+    "vendors": [
+        {
+            "vendor_name": "AlphaVantage",
+            "vendor_code": "AV",
+            "nested_fields": [
+                {
+                    "category_name": "Money, Banking & Finance",
+                    "category_code": "money_banking_finance",
+                    "symbols": [],
+                    "nested_fields": [
+                        {
+                            "category_name": "Interest Rates",
+                            "category_code": "interest_rates",
+                            "symbols": [],
+                            "nested_fields": [
+                                {
+                                    "category_name": "Treasury Constant Maturity",
+                                    "category_code": "treasury_constant_maturity",
+                                    "symbols": [
+                                        {
+                                            "symbol": "DGS10",
+                                            "description": "Market Yield on US Treasures at 10-Year Const. Maturity, Quoted on Investment Basis",
+                                            "units": "Percent",
+                                            "seasonally_adjusted": "N",
+                                            "frequency": "Daily",
+                                            "country": "United States",
+                                            "data_source": "US Fed Reserve, retrieved from FRED"
+                                        },
+                                        {
+                                            "symbol": "DGS2",
+                                            "description": "Market Yield on US Treasures at 2-Year Const. Maturity, Quoted on Investment Basis",
+                                            "units": "Percent",
+                                            "seasonally_adjusted": "N",
+                                            "frequency": "Daily",
+                                            "country": "United States",
+                                            "data_source": "US Fed Reserve, retrieved from FRED"
+                                        },
+                                        {
+                                            "symbol": "DGS7",
+                                            "description": "Market Yield on US Treasures at 7-Year Const. Maturity, Quoted on Investment Basis",
+                                            "units": "Percent",
+                                            "seasonally_adjusted": "N",
+                                            "frequency": "Daily",
+                                            "country": "United States",
+                                            "data_source": "US Fed Reserve, retrieved from FRED"
+                                        },
+                                        {
+                                            "symbol": "DGS5",
+                                            "description": "Market Yield on US Treasures at 5-Year Const. Maturity, Quoted on Investment Basis",
+                                            "units": "Percent",
+                                            "seasonally_adjusted": "N",
+                                            "frequency": "Daily",
+                                            "country": "United States",
+                                            "data_source": "US Fed Reserve, retrieved from FRED"
+                                        },
+                                        {
+                                            "symbol": "DGS30",
+                                            "description": "Market Yield on US Treasures at 30-Year Const. Maturity, Quoted on Investment Basis",
+                                            "units": "Percent",
+                                            "seasonally_adjusted": "N",
+                                            "frequency": "Daily",
+                                            "country": "United States",
+                                            "data_source": "US Fed Reserve, retrieved from FRED"
+                                        },
+                                        {
+                                            "symbol": "DGS3MO",
+                                            "description": "Market Yield on US Treasures at 3-Month Const. Maturity, Quoted on Investment Basis",
+                                            "units": "Percent",
+                                            "seasonally_adjusted": "N",
+                                            "frequency": "Daily",
+                                            "country": "United States",
+                                            "data_source": "US Fed Reserve, retrieved from FRED"
+                                        }
+                                    ],
+                                    "nested_fields": []
+                                },
+                                {
+                                    "category_name": "FRB Rates - discount, fed funds, primary credit",
+                                    "category_code": "frb_rates_fed_funds_primary_credit",
+                                    "symbols": [
+                                        {
+                                            "symbol": "DFF",
+                                            "description": "Federal Funds Effective Rate [DFF]",
+                                            "units": "Percent",
+                                            "seasonally_adjusted": "N",
+                                            "frequency": "Daily",
+                                            "country": "United States",
+                                            "data_source": "US Fed Reserve, retrieved from FRED"
+                                        }
+                                    ],
+                                    "nested_fields": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "category_name": "Prices",
+                    "category_code": "prices",
+                    "symbols": [],
+                    "nested_fields": [
+                        {
+                            "category_name": "Comodities",
+                            "category_code": "comodities",
+                            "symbols": [
+                                {
+                                    "symbol": "DCOILWTICO",
+                                    "description": "US. EIA, Crude Oil Prices: West Texas Intermediate (WTI) - Cushing, Oklahoma",
+                                    "units": "Dollars per barrel",
+                                    "seasonally_adjusted": "N",
+                                    "frequency": "Daily",
+                                    "country": "United States",
+                                    "data_source": "US EIA, retrieved from FRED"
+                                },
+                                {
+                                    "symbol": "DCOILBRENTEU",
+                                    "description": "US. EIA, Crude Oil Prices: Brent Europe (DCOILBRENTEU)",
+                                    "units": "Dollars per barrel",
+                                    "seasonally_adjusted": "N",
+                                    "frequency": "Daily",
+                                    "country": "European Union",
+                                    "data_source": "US EIA, retrieved from FRED"
+                                },
+                                {
+                                    "symbol": "DHHNGSP",
+                                    "description": "U.S. EIA, Henry Hub Natural Gas Spot Price [DHHNGSP]",
+                                    "units": "Dollars per Million BTU",
+                                    "seasonally_adjusted": "N",
+                                    "frequency": "Daily",
+                                    "country": "United States",
+                                    "data_source": "US EIA, retrieved from FRED"
+                                }
+                            ],
+                            "nested_fields": []
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

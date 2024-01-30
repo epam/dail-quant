@@ -1,0 +1,40 @@
+from sqlalchemy import (
+    BigInteger,
+    Boolean,
+    Column,
+    DateTime,
+    Index,
+    SmallInteger,
+    String,
+    Table,
+    Text,
+)
+
+from market_alerts.infrastructure.datasource import metadata
+
+alert_table = Table(
+    "alert",
+    metadata,
+    Column("id", BigInteger, primary_key=True, autoincrement=True),
+    Column("user_id", String(255), nullable=False),
+    Column("data_source", String(255), nullable=False),
+    Column("title", Text, nullable=False),
+    Column("active", Boolean, nullable=False),
+    Column("periodicity", BigInteger, nullable=False),
+    Column("time_range", BigInteger, nullable=False),
+    Column("tickers_prompt", Text),
+    Column("tickers", Text),
+    Column("indicators_prompt", Text),
+    Column("indicators_logic", Text),
+    Column("alerts_prompt", Text),
+    Column("alerts_logic", Text),
+    Column("trigger_type", SmallInteger, nullable=False),
+    Column("created", DateTime, nullable=False),
+    Column("end_time", DateTime),
+    Column("alert_text_template", Text, nullable=False),
+    Column("activation_time", BigInteger),
+    Column("alert_emails", Text),
+    Column("time_zone", String(64)),
+    Column("datasets", Text),
+    Index("index_user_id", "user_id"),
+)

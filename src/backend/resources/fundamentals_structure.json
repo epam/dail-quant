@@ -1,0 +1,1201 @@
+{
+    "vendors": [
+        {
+            "vendor_name": "TwelveData",
+            "vendor_code": "TW",
+            "nested_fields": [
+                {
+                    "category_name": "Income statement",
+                    "category_code": "income_statement",
+                    "description": "",
+                    "nested_fields": [
+                        {
+                            "category_name": "Fiscal date",
+                            "category_code": "fiscal_date",
+                            "description": "Date of the income statement release",
+                            "frequency": [
+                                "anual",
+                                "quarterly"
+                            ],
+                            "nested_fields": []
+                        },
+                        {
+                            "category_name": "Quarter",
+                            "category_code": "quarter",
+                            "description": "Fiscal quarter",
+                            "frequency": [
+                                "quarterly"
+                            ],
+                            "nested_fields": []
+                        },
+                        {
+                            "category_name": "Sales",
+                            "category_code": "sales",
+                            "description": "Refers to total reported revenue",
+                            "frequency": [
+                                "anual",
+                                "quarterly"
+                            ],
+                            "nested_fields": []
+                        },
+                        {
+                            "category_name": "Cost of goods",
+                            "category_code": "cost_of_goods",
+                            "description": "Refers to cost of revenue",
+                            "frequency": [
+                                "anual",
+                                "quarterly"
+                            ],
+                            "nested_fields": []
+                        },
+                        {
+                            "category_name": "Gross profit",
+                            "category_code": "gross_profit",
+                            "description": "Refers to net gross profit: sales - cost_of_goods",
+                            "frequency": [
+                                "anual",
+                                "quarterly"
+                            ],
+                            "nested_fields": []
+                        },
+                        {
+                            "category_name": "Operating expense",
+                            "category_code": "operating_expense",
+                            "description": "",
+                            "frequency": [
+                                "anual",
+                                "quarterly"
+                            ],
+                            "nested_fields": [
+                                {
+                                    "category_name": "Research and development",
+                                    "category_code": "research_and_developments",
+                                    "description": "Refers to research & development (R&D) expenses",
+                                    "frequency": [
+                                        "anual",
+                                        "quarterly"
+                                    ],
+                                    "nested_fields": []
+                                },
+                                {
+                                    "category_name": "Selling general and administrative",
+                                    "category_code": "selling_general_and_administrative",
+                                    "description": "Refers to selling, general and administrative (SG&A) expenses",
+                                    "frequency": [
+                                        "anual",
+                                        "quarterly"
+                                    ],
+                                    "nested_fields": []
+                                },
+                                {
+                                    "category_name": "Other operating expenses",
+                                    "category_code": "other_operating_expenses",
+                                    "description": "Refers to other operating expenses",
+                                    "frequency": [
+                                        "anual",
+                                        "quarterly"
+                                    ],
+                                    "nested_fields": []
+                                }
+                            ]
+                        },
+                        {
+                            "category_name": "Operating income",
+                            "category_code": "operating_income",
+                            "description": "Refers to net operating income: gross_profit - research_and_development - selling_general_and_administrative",
+                            "frequency": [
+                                "anual",
+                                "quarterly"
+                            ],
+                            "nested_fields": []
+                        },
+                        {
+                            "category_name": "Non operating interest",
+                            "category_code": "non_operating_interest",
+                            "description": "",
+                            "frequency": [
+                                "anual",
+                                "quarterly"
+                            ],
+                            "nested_fields": [
+                                {
+                                    "category_name": "Income",
+                                    "category_code": "income",
+                                    "description": "Refers to non-operating interest income",
+                                    "frequency": [
+                                        "anual",
+                                        "quarterly"
+                                    ],
+                                    "nested_fields": []
+                                },
+                                {
+                                    "category_name": "Expense",
+                                    "category_code": "expense",
+                                    "description": "Refers to non-operating interest expense",
+                                    "frequency": [
+                                        "anual",
+                                        "quarterly"
+                                    ],
+                                    "nested_fields": []
+                                }
+                            ]
+                        },
+                        {
+                            "category_name": "Other income expense",
+                            "category_code": "other_income_expense",
+                            "description": "Refers to other incomes or expenses",
+                            "frequency": [
+                                "anual",
+                                "quarterly"
+                            ],
+                            "nested_fields": []
+                        },
+                        {
+                            "category_name": "Pretax income",
+                            "category_code": "pretax_income",
+                            "description": "Refers to earnings before tax: operating_income + net_non_operating_interest - other_income_expense",
+                            "frequency": [
+                                "anual",
+                                "quarterly"
+                            ],
+                            "nested_fields": []
+                        },
+                        {
+                            "category_name": "Income tax",
+                            "category_code": "income_tax",
+                            "description": "Refers to a tax provision",
+                            "frequency": [
+                                "anual",
+                                "quarterly"
+                            ],
+                            "nested_fields": []
+                        },
+                        {
+                            "category_name": "Net income",
+                            "category_code": "net_income",
+                            "description": "Refers to net income: pretax_income - income_tax",
+                            "frequency": [
+                                "anual",
+                                "quarterly"
+                            ],
+                            "nested_fields": []
+                        },
+                        {
+                            "category_name": "Eps basic",
+                            "category_code": "eps_basic",
+                            "description": "Refers to earnings per share (EPS)",
+                            "frequency": [
+                                "anual",
+                                "quarterly"
+                            ],
+                            "nested_fields": []
+                        },
+                        {
+                            "category_name": "Eps diluted",
+                            "category_code": "eps_diluted",
+                            "description": "Refers to diluted earnings per share (EPS)",
+                            "frequency": [
+                                "anual",
+                                "quarterly"
+                            ],
+                            "nested_fields": []
+                        },
+                        {
+                            "category_name": "Basic shares outstanding",
+                            "category_code": "basic_shares_outstanding",
+                            "description": "Refers for the shares outstanding held by all its shareholders",
+                            "frequency": [
+                                "anual",
+                                "quarterly"
+                            ],
+                            "nested_fields": []
+                        },
+                        {
+                            "category_name": "Diluted shares outstanding",
+                            "category_code": "diluted_shares_outstanding",
+                            "description": "Refers to the total number of shares a company would have if all dilutive securities were exercised and converted into shares",
+                            "frequency": [
+                                "anual",
+                                "quarterly"
+                            ],
+                            "nested_fields": []
+                        },
+                        {
+                            "category_name": "EBITDA",
+                            "category_code": "ebitda",
+                            "description": "Refers to EBITDA (earnings before interest, taxes, depreciation, and amortization) measure",
+                            "frequency": [
+                                "anual",
+                                "quarterly"
+                            ],
+                            "nested_fields": []
+                        },
+                        {
+                            "category_name": "Net income continuous operations",
+                            "category_code": "net_income_continuous_operations",
+                            "description": "Refers to the after-tax earnings that a business has generated from its operational activities",
+                            "frequency": [
+                                "anual",
+                                "quarterly"
+                            ],
+                            "nested_fields": []
+                        },
+                        {
+                            "category_name": "Minority interests",
+                            "category_code": "minority_interests",
+                            "description": "Refers to amount of minority interests paid out",
+                            "frequency": [
+                                "anual",
+                                "quarterly"
+                            ],
+                            "nested_fields": []
+                        },
+                        {
+                            "category_name": "Preferred stock dividends",
+                            "category_code": "preferred_stock_dividends",
+                            "description": "Refers to dividend that is allocated to and paid on a company's preferred shares",
+                            "frequency": [
+                                "anual",
+                                "quarterly"
+                            ],
+                            "nested_fields": []
+                        }
+                    ]
+                },
+                {
+                    "category_name": "Cash flow",
+                    "category_code": "income_statement",
+                    "description": "",
+                    "nested_fields": [
+                        {
+                            "category_name": "Fiscal date",
+                            "category_code": "fiscal_date",
+                            "description": "Date of the cash flow release",
+                            "frequency": [
+                                "anual",
+                                "quarterly"
+                            ],
+                            "nested_fields": []
+                        },
+                        {
+                            "category_name": "Quarter",
+                            "category_code": "quarter",
+                            "description": "Fiscal quarter",
+                            "frequency": [
+                                "quarterly"
+                            ],
+                            "nested_fields": []
+                        },
+                        {
+                            "category_name": "Operating activities",
+                            "category_code": "operating_activities",
+                            "description": "",
+                            "frequency": [
+                                "anual",
+                                "quarterly"
+                            ],
+                            "nested_fields": [
+                                {
+                                    "category_name": "Net income",
+                                    "category_code": "net_income",
+                                    "description": "Returns net income (NI). Calculated as sales minus cost of goods sold",
+                                    "frequency": [
+                                        "anual",
+                                        "quarterly"
+                                    ],
+                                    "nested_fields": []
+                                },
+                                {
+                                    "category_name": "Depreciation",
+                                    "category_code": "depreciation",
+                                    "description": "Represents depreciation and amortization measure",
+                                    "frequency": [
+                                        "anual",
+                                        "quarterly"
+                                    ],
+                                    "nested_fields": []
+                                },
+                                {
+                                    "category_name": "Deffered taxes",
+                                    "category_code": "deffered_taxes",
+                                    "description": "Stands for taxes that are owed but are not due to be paid until a future date",
+                                    "frequency": [
+                                        "anual",
+                                        "quarterly"
+                                    ],
+                                    "nested_fields": []
+                                },
+                                {
+                                    "category_name": "Stock based compensation",
+                                    "category_code": "stock_based_compensation",
+                                    "description": "Refers to share-based compensation as the way of paying employees, executives, and directors of a company with equity in the business",
+                                    "frequency": [
+                                        "anual",
+                                        "quarterly"
+                                    ],
+                                    "nested_fields": []
+                                },
+                                {
+                                    "category_name": "Other non cash items",
+                                    "category_code": "other_non_cash_items",
+                                    "description": "Represents other non-cash items",
+                                    "frequency": [
+                                        "anual",
+                                        "quarterly"
+                                    ],
+                                    "nested_fields": []
+                                },
+                                {
+                                    "category_name": "Accounts receivable",
+                                    "category_code": "accounts_receivable",
+                                    "description": "Represents the balance of money due to a firm for goods or services delivered or used but not yet paid for by customers",
+                                    "frequency": [
+                                        "anual",
+                                        "quarterly"
+                                    ],
+                                    "nested_fields": []
+                                },
+                                {
+                                    "category_name": "Accounts payable",
+                                    "category_code": "accounts_payable",
+                                    "description": "Refers to an account within the general ledger that represents an obligation to pay off a short-term debt to creditors or suppliers",
+                                    "frequency": [
+                                        "anual",
+                                        "quarterly"
+                                    ],
+                                    "nested_fields": []
+                                },
+                                {
+                                    "category_name": "Other assets liabilities",
+                                    "category_code": "other_assets_liabilities",
+                                    "description": "Represents cumulative changes in inventory, other current assets, other current liabilities, and other working capital",
+                                    "frequency": [
+                                        "anual",
+                                        "quarterly"
+                                    ],
+                                    "nested_fields": []
+                                },
+                                {
+                                    "category_name": "Operating cash flow",
+                                    "category_code": "operating_cash_flow",
+                                    "description": "Returns operating cash flow (OCF) measure representing a total amount of cash generated by company's normal business operations",
+                                    "frequency": [
+                                        "anual",
+                                        "quarterly"
+                                    ],
+                                    "nested_fields": []
+                                }
+                            ]
+                        },
+                        {
+                            "category_name": "Investing activities",
+                            "category_code": "investing_activities",
+                            "description": "",
+                            "frequency": [
+                                "anual",
+                                "quarterly"
+                            ],
+                            "nested_fields": [
+                                {
+                                    "category_name": "Capital expenditures",
+                                    "category_code": "capital_expenditures",
+                                    "description": "Capital expenditures (CapEx) are funds used by a company to acquire, upgrade, and maintain physical assets (PPE)",
+                                    "frequency": [
+                                        "anual",
+                                        "quarterly"
+                                    ],
+                                    "nested_fields": []
+                                },
+                                {
+                                    "category_name": "Net intangibles",
+                                    "category_code": "net_intangibles",
+                                    "description": "Represents purchase of a not physical asset",
+                                    "frequency": [
+                                        "anual",
+                                        "quarterly"
+                                    ],
+                                    "nested_fields": []
+                                },
+                                {
+                                    "category_name": "Net acquisitions",
+                                    "category_code": "net_acquisitions",
+                                    "description": "Refers to net amount of business purchase and sale",
+                                    "frequency": [
+                                        "anual",
+                                        "quarterly"
+                                    ],
+                                    "nested_fields": []
+                                },
+                                {
+                                    "category_name": "Purchase of invesments",
+                                    "category_code": "purchase_of_investments",
+                                    "description": "Represents how much money has been used in making investments, including purchases of physical assets, investments in securities",
+                                    "frequency": [
+                                        "anual",
+                                        "quarterly"
+                                    ],
+                                    "nested_fields": []
+                                },
+                                {
+                                    "category_name": "Save of invesments",
+                                    "category_code": "sale_of_investments",
+                                    "description": "Represents how much money has been generated from the sale of securities or assets",
+                                    "frequency": [
+                                        "anual",
+                                        "quarterly"
+                                    ],
+                                    "nested_fields": []
+                                },
+                                {
+                                    "category_name": "Other investing activity",
+                                    "category_code": "other_investing_activity",
+                                    "description": "Represents other investing activity",
+                                    "frequency": [
+                                        "anual",
+                                        "quarterly"
+                                    ],
+                                    "nested_fields": []
+                                },
+                                {
+                                    "category_name": "Investing cash flow",
+                                    "category_code": "investing_cash_flow",
+                                    "description": "Returns total amount of cash flow used in investments",
+                                    "frequency": [
+                                        "anual",
+                                        "quarterly"
+                                    ],
+                                    "nested_fields": []
+                                }
+                            ]
+                        },
+                        {
+                            "category_name": "Financing activities",
+                            "category_code": "financing_activities",
+                            "description": "",
+                            "frequency": [
+                                "anual",
+                                "quarterly"
+                            ],
+                            "nested_fields": [
+                                {
+                                    "category_name": "Long term debt issuance",
+                                    "category_code": "long_term_debt_issuance",
+                                    "description": "Refers to the issuance of any financial obligations that extend beyond a 12 months period",
+                                    "frequency": [
+                                        "quarterly"
+                                    ],
+                                    "nested_fields": []
+                                },
+                                {
+                                    "category_name": "Long term debt payments",
+                                    "category_code": "long_term_debt_payments",
+                                    "description": "Refers to the payments of any financial obligations that extend beyond a 12 months period",
+                                    "frequency": [
+                                        "quarterly"
+                                    ],
+                                    "nested_fields": []
+                                },
+                                {
+                                    "category_name": "Short term debt issuance",
+                                    "category_code": "short_term_debt_issuance",
+                                    "description": "Refers to the issuance of any financial obligations that are expected to be paid off within a year",
+                                    "frequency": [
+                                        "quarterly"
+                                    ],
+                                    "nested_fields": []
+                                },
+                                {
+                                    "category_name": "Common stock issuance",
+                                    "category_code": "common_stock_issuance",
+                                    "description": "Represents a transaction whereby a company issues its own shares to the marketplace",
+                                    "frequency": [
+                                        "quarterly"
+                                    ],
+                                    "nested_fields": []
+                                },
+                                {
+                                    "category_name": "Common stock repurchase",
+                                    "category_code": "common_stock_repurchase",
+                                    "description": "Represents a transaction whereby a company buys back its own shares from the marketplace",
+                                    "frequency": [
+                                        "quarterly"
+                                    ],
+                                    "nested_fields": []
+                                },
+                                {
+                                    "category_name": "Common dividends",
+                                    "category_code": "common_dividends",
+                                    "description": "Returns value of payment doled out by a company to its stockholders in the form of periodic distributions of cash",
+                                    "frequency": [
+                                        "quarterly"
+                                    ],
+                                    "nested_fields": []
+                                },
+                                {
+                                    "category_name": "Other financial charges",
+                                    "category_code": "other_financial_charges",
+                                    "description": "Represents other financing charges",
+                                    "frequency": [
+                                        "quarterly"
+                                    ],
+                                    "nested_fields": []
+                                },
+                                {
+                                    "category_name": "Financing cash flow",
+                                    "category_code": "financing_cash_flow",
+                                    "description": "Returns cash flow from financing activities (CFF), which shows the net flows of cash that are used to fund the company",
+                                    "frequency": [
+                                        "quarterly"
+                                    ],
+                                    "nested_fields": []
+                                }
+                            ]
+                        },
+                        {
+                            "category_name": "End cash position",
+                            "category_code": "end_cash_position",
+                            "description": "Returns the amount of cash a company has when adding the change in cash and beginning cash balance for the current fiscal period",
+                            "frequency": [
+                                "anual",
+                                "quarterly"
+                            ],
+                            "nested_fields": []
+                        },
+                        {
+                            "category_name": "Income tax paid",
+                            "category_code": "income_tax_paid",
+                            "description": "Refers to supplemental data about income tax paid",
+                            "frequency": [
+                                "anual",
+                                "quarterly"
+                            ],
+                            "nested_fields": []
+                        },
+                        {
+                            "category_name": "Interest paid",
+                            "category_code": "interest_paid",
+                            "description": "Refers to supplemental data about interest paid",
+                            "frequency": [
+                                "anual",
+                                "quarterly"
+                            ],
+                            "nested_fields": []
+                        },
+                        {
+                            "category_name": "Free cash flow",
+                            "category_code": "free_cash_flow",
+                            "description": "Represents the cash a company generates after accounting for cash outflows to support operations and maintain its capital assets",
+                            "frequency": [
+                                "anual",
+                                "quarterly"
+                            ],
+                            "nested_fields": []
+                        }
+                    ]
+                },
+                {
+                    "category_name": "Balance sheet",
+                    "category_code": "balance_sheet",
+                    "nested_fields": [
+                        {
+                            "category_name": "Fiscal date",
+                            "category_code": "fiscal_date",
+                            "description": "Date of the balance sheet release",
+                            "frequency": [
+                                "anual",
+                                "quarterly"
+                            ],
+                            "nested_fields": []
+                        },
+                        {
+                            "category_name": "Quarter",
+                            "category_code": "quarter",
+                            "description": "Fiscal quarter",
+                            "frequency": [
+                                "quarterly"
+                            ],
+                            "nested_fields": []
+                        },
+                        {
+                            "category_name": "Assets",
+                            "category_code": "assets",
+                            "description": "",
+                            "frequency": [
+                                "anual",
+                                "quarterly"
+                            ],
+                            "nested_fields": [
+                                {
+                                    "category_name": "Current assets",
+                                    "category_code": "current_assets",
+                                    "description": "",
+                                    "frequency": [
+                                        "anual",
+                                        "quarterly"
+                                    ],
+                                    "nested_fields": [
+                                        {
+                                            "category_name": "Cash",
+                                            "category_code": "cash",
+                                            "description": "Cash includes currency, bank accounts, and undeposited checks",
+                                            "frequency": [
+                                                "anual",
+                                                "quarterly"
+                                            ],
+                                            "nested_fields": []
+                                        },
+                                        {
+                                            "category_name": "Cash equivalents",
+                                            "category_code": "cash_equivalents",
+                                            "description": "Represents cash equivalents that have high credit quality and are highly liquid",
+                                            "frequency": [
+                                                "anual",
+                                                "quarterly"
+                                            ],
+                                            "nested_fields": []
+                                        },
+                                        {
+                                            "category_name": "Cash and cash equivalents",
+                                            "category_code": "cash_and_cash_equivalents",
+                                            "description": "Combined value of cash and cash equivalents when company doesn't report a breakdown",
+                                            "frequency": [
+                                                "anual",
+                                                "quarterly"
+                                            ],
+                                            "nested_fields": []
+                                        },
+                                        {
+                                            "category_name": "Other short term investments",
+                                            "category_code": "other_short_term_investments",
+                                            "description": "Represents other short term investments",
+                                            "frequency": [
+                                                "anual",
+                                                "quarterly"
+                                            ],
+                                            "nested_fields": []
+                                        },
+                                        {
+                                            "category_name": "Accounts receivable",
+                                            "category_code": "accounts_receivable",
+                                            "description": "Represents the balance of money due to a firm for goods or services delivered or used but not yet paid for by customers",
+                                            "frequency": [
+                                                "anual",
+                                                "quarterly"
+                                            ],
+                                            "nested_fields": []
+                                        },
+                                        {
+                                            "category_name": "Other receivables",
+                                            "category_code": "other_receivables",
+                                            "description": "Represents other receivables",
+                                            "frequency": [
+                                                "anual",
+                                                "quarterly"
+                                            ],
+                                            "nested_fields": []
+                                        },
+                                        {
+                                            "category_name": "Inventory",
+                                            "category_code": "inventory",
+                                            "description": "Represents the goods available for sale and raw materials used to produce goods available for sale",
+                                            "frequency": [
+                                                "anual",
+                                                "quarterly"
+                                            ],
+                                            "nested_fields": []
+                                        },
+                                        {
+                                            "category_name": "Prepaid assets",
+                                            "category_code": "prepaid_assets",
+                                            "description": "Represents expense that has already been paid for, but which has not yet been consumed",
+                                            "frequency": [
+                                                "anual",
+                                                "quarterly"
+                                            ],
+                                            "nested_fields": []
+                                        },
+                                        {
+                                            "category_name": "Restricted cash",
+                                            "category_code": "restricted_cash",
+                                            "description": "Represents money that is held for a specific purpose and thus not available to the company for immediate or general business use",
+                                            "frequency": [
+                                                "anual",
+                                                "quarterly"
+                                            ],
+                                            "nested_fields": []
+                                        },
+                                        {
+                                            "category_name": "Assets held for sale",
+                                            "category_code": "assets_held_for_sale",
+                                            "description": "Represents assets which company plans to sell",
+                                            "frequency": [
+                                                "anual",
+                                                "quarterly"
+                                            ],
+                                            "nested_fields": []
+                                        },
+                                        {
+                                            "category_name": "Hedging assets",
+                                            "category_code": "assets_held_for_sale",
+                                            "description": "Represents money that is spent on hedging assets",
+                                            "frequency": [
+                                                "anual",
+                                                "quarterly"
+                                            ],
+                                            "nested_fields": []
+                                        },
+                                        {
+                                            "category_name": "Other current assets",
+                                            "category_code": "other_current_assets",
+                                            "description": "Represents other current assets",
+                                            "frequency": [
+                                                "anual",
+                                                "quarterly"
+                                            ],
+                                            "nested_fields": []
+                                        },
+                                        {
+                                            "category_name": "Total current assets",
+                                            "category_code": "total_current_assets",
+                                            "description": "All current assets values in a total",
+                                            "frequency": [
+                                                "anual",
+                                                "quarterly"
+                                            ],
+                                            "nested_fields": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "category_name": "Non current assets",
+                                    "category_code": "non_current_assets",
+                                    "description": "All current assets values in a total",
+                                    "frequency": [
+                                        "anual",
+                                        "quarterly"
+                                    ],
+                                    "nested_fields": [
+                                        {
+                                            "category_name": "Properties",
+                                            "category_code": "properties",
+                                            "description": "Represents property owned",
+                                            "frequency": [
+                                                "anual",
+                                                "quarterly"
+                                            ],
+                                            "nested_fields": []
+                                        },
+                                        {
+                                            "category_name": "Land and improvements",
+                                            "category_code": "land_and_improvements",
+                                            "description": "Represents land and improvements owned",
+                                            "frequency": [
+                                                "anual",
+                                                "quarterly"
+                                            ],
+                                            "nested_fields": []
+                                        },
+                                        {
+                                            "category_name": "Machinery furniture improvements",
+                                            "category_code": "machinery_furniture_equipment",
+                                            "description": "Represents office equipment, furniture, and vehicles owned",
+                                            "frequency": [
+                                                "anual",
+                                                "quarterly"
+                                            ],
+                                            "nested_fields": []
+                                        },
+                                        {
+                                            "category_name": "Construction in progress",
+                                            "category_code": "construction_in_progress",
+                                            "description": "Represents the cost of construction work, which is not yet completed",
+                                            "frequency": [
+                                                "anual",
+                                                "quarterly"
+                                            ],
+                                            "nested_fields": []
+                                        },
+                                        {
+                                            "category_name": "Leases",
+                                            "category_code": "leases",
+                                            "description": "Represents operating and financial leases",
+                                            "frequency": [
+                                                "anual",
+                                                "quarterly"
+                                            ],
+                                            "nested_fields": []
+                                        },
+                                        {
+                                            "category_name": "Accumulated deprecation",
+                                            "category_code": "accumulated_deprecation",
+                                            "description": "Represents the cumulative depreciation of an asset that has been recorded",
+                                            "frequency": [
+                                                "anual",
+                                                "quarterly"
+                                            ],
+                                            "nested_fields": []
+                                        },
+                                        {
+                                            "category_name": "Goodwill",
+                                            "category_code": "goodwill",
+                                            "description": "Represents the value of a brand name, solid customer base, good customer relations, good employee relations, and proprietary technology",
+                                            "frequency": [
+                                                "anual",
+                                                "quarterly"
+                                            ],
+                                            "nested_fields": []
+                                        },
+                                        {
+                                            "category_name": "Invesment properties",
+                                            "category_code": "investemnt_properties",
+                                            "description": "Represents real estate property purchased with the intention of earning a return on the investment",
+                                            "frequency": [
+                                                "anual",
+                                                "quarterly"
+                                            ],
+                                            "nested_fields": []
+                                        },
+                                        {
+                                            "category_name": "Financial assets",
+                                            "category_code": "financial_assets",
+                                            "description": "Represents liquid asset that gets its value from a contractual right or ownership claim",
+                                            "frequency": [
+                                                "anual",
+                                                "quarterly"
+                                            ],
+                                            "nested_fields": []
+                                        },
+                                        {
+                                            "category_name": "Intangible assets",
+                                            "category_code": "intangible_assets",
+                                            "description": "Represents the patents, trademarks, and other intellectual properties",
+                                            "frequency": [
+                                                "anual",
+                                                "quarterly"
+                                            ],
+                                            "nested_fields": []
+                                        },
+                                        {
+                                            "category_name": "Investments and advances",
+                                            "category_code": "investments_and_advances",
+                                            "description": "Represents available for sale financial securities",
+                                            "frequency": [
+                                                "anual",
+                                                "quarterly"
+                                            ],
+                                            "nested_fields": []
+                                        },
+                                        {
+                                            "category_name": "Other non current assets",
+                                            "category_code": "other_non_current_assets",
+                                            "description": "Represents other long-term assets",
+                                            "frequency": [
+                                                "anual",
+                                                "quarterly"
+                                            ],
+                                            "nested_fields": []
+                                        },
+                                        {
+                                            "category_name": "Total non current assets",
+                                            "category_code": "total_non_current_assets",
+                                            "description": "All long-term assets values in total",
+                                            "frequency": [
+                                                "anual",
+                                                "quarterly"
+                                            ],
+                                            "nested_fields": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "category_name": "Total assets",
+                                    "category_code": "total_assets",
+                                    "description": "The sum of total_current_assets + total_non_current_assets",
+                                    "frequency": [
+                                        "anual",
+                                        "quarterly"
+                                    ],
+                                    "nested_fields": []
+                                }
+                            ]
+                        },
+                        {
+                            "category_name": "Liabilities",
+                            "category_code": "liabilities",
+                            "description": "",
+                            "frequency": [
+                                "anual",
+                                "quarterly"
+                            ],
+                            "nested_fields": [
+                                {
+                                    "category_name": "Current liabilities",
+                                    "category_code": "current_liabilities",
+                                    "description": "",
+                                    "frequency": [
+                                        "anual",
+                                        "quarterly"
+                                    ],
+                                    "nested_fields": [
+                                        {
+                                            "category_name": "Accounts payable",
+                                            "category_code": "accounts_payable",
+                                            "description": "Refers to an account within the general ledger that represents an obligation to pay off a short-term debt to creditors or suppliers",
+                                            "frequency": [
+                                                "anual",
+                                                "quarterly"
+                                            ],
+                                            "nested_fields": []
+                                        },
+                                        {
+                                            "category_name": "Accured expenses",
+                                            "category_code": "accured_expenses",
+                                            "description": "Represents payments that a company is obligated to pay in the future for which goods and services have already been delivered",
+                                            "frequency": [
+                                                "anual",
+                                                "quarterly"
+                                            ],
+                                            "nested_fields": []
+                                        },
+                                        {
+                                            "category_name": "Short term debt",
+                                            "category_code": "short_term_debt",
+                                            "description": "Represents current debt and capital lease obligations",
+                                            "frequency": [
+                                                "anual",
+                                                "quarterly"
+                                            ],
+                                            "nested_fields": []
+                                        },
+                                        {
+                                            "category_name": "Deferred revenue",
+                                            "category_code": "deferred_revenue",
+                                            "description": "Represents advance payments a company receives for products or services that are to be delivered or performed in the future",
+                                            "frequency": [
+                                                "anual",
+                                                "quarterly"
+                                            ],
+                                            "nested_fields": []
+                                        },
+                                        {
+                                            "category_name": "Tax payable",
+                                            "category_code": "tax_payable",
+                                            "description": "Represents taxes due to the government within one year",
+                                            "frequency": [
+                                                "anual",
+                                                "quarterly"
+                                            ],
+                                            "nested_fields": []
+                                        },
+                                        {
+                                            "category_name": "Pensions",
+                                            "category_code": "pensions",
+                                            "description": "Represents to pensions to be paid out",
+                                            "frequency": [
+                                                "anual",
+                                                "quarterly"
+                                            ],
+                                            "nested_fields": []
+                                        },
+                                        {
+                                            "category_name": "Other current liabilities",
+                                            "category_code": "other_current_liabilities",
+                                            "description": "Represents other current liabilities",
+                                            "frequency": [
+                                                "anual",
+                                                "quarterly"
+                                            ],
+                                            "nested_fields": []
+                                        },
+                                        {
+                                            "category_name": "Total current liabilities",
+                                            "category_code": "Total_current_liabilities",
+                                            "description": "Represents total current assets",
+                                            "frequency": [
+                                                "anual",
+                                                "quarterly"
+                                            ],
+                                            "nested_fields": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "category_name": "Non current liabilities",
+                                    "category_code": "non_current_liabilities",
+                                    "description": "",
+                                    "frequency": [
+                                        "anual",
+                                        "quarterly"
+                                    ],
+                                    "nested_fields": [
+                                        {
+                                            "category_name": "Long term provisions",
+                                            "category_code": "long_term_provisions",
+                                            "description": "Represents money set aside for employee benefits such as gratuity",
+                                            "frequency": [
+                                                "anual",
+                                                "quarterly"
+                                            ],
+                                            "nested_fields": []
+                                        },
+                                        {
+                                            "category_name": "Long term debt",
+                                            "category_code": "long_term_debt",
+                                            "description": "Represents amount of outstanding debt that has a maturity of 12 months or longer",
+                                            "frequency": [
+                                                "anual",
+                                                "quarterly"
+                                            ],
+                                            "nested_fields": []
+                                        },
+                                        {
+                                            "category_name": "Provisions for risks and charges",
+                                            "category_code": "provisions_for_risks_and_charges",
+                                            "description": "Represents funds set aside as assets to pay for anticipated future losses",
+                                            "frequency": [
+                                                "anual",
+                                                "quarterly"
+                                            ],
+                                            "nested_fields": []
+                                        },
+                                        {
+                                            "category_name": "Deffered liabilities",
+                                            "category_code": "deferred_liabilities",
+                                            "description": "Represents revenue producing activity for which revenue has not yet been recognized, and is not expected to be recognized in the next 12 months",
+                                            "frequency": [
+                                                "anual",
+                                                "quarterly"
+                                            ],
+                                            "nested_fields": []
+                                        },
+                                        {
+                                            "category_name": "Derivated product liabilities",
+                                            "category_code": "derivated_product_liabilities",
+                                            "description": "",
+                                            "frequency": [
+                                                "anual",
+                                                "quarterly"
+                                            ],
+                                            "nested_fields": []
+                                        },
+                                        {
+                                            "category_name": "Other non current liabilities",
+                                            "category_code": "other_non_current_liabilities",
+                                            "description": "Represents other non-current liabilities",
+                                            "frequency": [
+                                                "anual",
+                                                "quarterly"
+                                            ],
+                                            "nested_fields": []
+                                        },
+                                        {
+                                            "category_name": "Total non current liabilities",
+                                            "category_code": "total_non_current_liabilities",
+                                            "description": "Represents total non-current liabilities",
+                                            "frequency": [
+                                                "anual",
+                                                "quarterly"
+                                            ],
+                                            "nested_fields": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "category_name": "Total liabilities",
+                                    "category_code": "total_liabilities",
+                                    "description": "The sum of total_current_liabilities + total_non_current_liabilities",
+                                    "frequency": [
+                                        "anual",
+                                        "quarterly"
+                                    ],
+                                    "nested_fields": []
+                                }
+                            ]
+                        },
+                        {
+                            "category_name": "Shareholders equity",
+                            "category_code": "shareholders_equity",
+                            "description": "",
+                            "frequency": [
+                                "anual",
+                                "quarterly"
+                            ],
+                            "nested_fields": [
+                                {
+                                    "category_name": "Common stock",
+                                    "category_code": "common_stock",
+                                    "description": "Represents net worth of investors shares, which is equal to the total_assets - total_liabilities",
+                                    "frequency": [
+                                        "anual",
+                                        "quarterly"
+                                    ],
+                                    "nested_fields": []
+                                },
+                                {
+                                    "category_name": "Retained earnings",
+                                    "category_code": "retained_earnings",
+                                    "description": "Refers to the profits earned minus dividends paid",
+                                    "frequency": [
+                                        "anual",
+                                        "quarterly"
+                                    ],
+                                    "nested_fields": []
+                                },
+                                {
+                                    "category_name": "Other shareholders equity",
+                                    "category_code": "other_shareholders_equity",
+                                    "description": "Represents other not affecting retained earnings gains and looses",
+                                    "frequency": [
+                                        "anual",
+                                        "quarterly"
+                                    ],
+                                    "nested_fields": []
+                                },
+                                {
+                                    "category_name": "Total shareholders equity",
+                                    "category_code": "total_shareholders_equity",
+                                    "description": "Represents the net worth of a company, which is the amount that would be returned to shareholders if a company's total assets were liquidated, and all of its debts were repaid",
+                                    "frequency": [
+                                        "anual",
+                                        "quarterly"
+                                    ],
+                                    "nested_fields": []
+                                },
+                                {
+                                    "category_name": "Additional paid in capital",
+                                    "category_code": "additional_paid_in_capital",
+                                    "description": "",
+                                    "frequency": [
+                                        "anual",
+                                        "quarterly"
+                                    ],
+                                    "nested_fields": []
+                                },
+                                {
+                                    "category_name": "Treasury stock",
+                                    "category_code": "treasury_stock",
+                                    "description": "",
+                                    "frequency": [
+                                        "anual",
+                                        "quarterly"
+                                    ],
+                                    "nested_fields": []
+                                },
+                                {
+                                    "category_name": "Minority_interest",
+                                    "category_code": "minotiry_interest",
+                                    "description": "",
+                                    "frequency": [
+                                        "anual",
+                                        "quarterly"
+                                    ],
+                                    "nested_fields": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

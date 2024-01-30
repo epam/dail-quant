@@ -1,0 +1,70 @@
+Imports and libraries such as pandas, numpy, sklearn, and ta are pre-imported. Symbols are provided as pd.DataFrames with datetime index stored in a dict called data_by_symbol (e.g., data_by_symbol["GOOG"] for GOOG). The set of columns differs depending on whether the symbol is an economic indicator or a common symbol which have a price. Economic indicators have only one column: value. Common symbols have columns(- Column : Description):
+- open : Open price.
+- close : Close price.
+- low : Low price.
+- high : High price.
+- volume : Volume.
+%s
+
+1. Symbol Lists:
+- There are three python lists of symbol names: symbols (all), tradable_symbols (which have a price and user wants to trade), supplementary_symbols (which have a price and user doesn't want to trade), economic_indicator_symbols(economic indicators which have no price).
+- Sparse symbols are in the sparse_symbols list.
+- Non-sparse symbols have a unified index space, while sparse symbols have monthly/quarterly/annual data.
+
+2. Indicator Functions:
+- Indicator functions return pd.Series and can have open, close, low, high, volume arguments.
+- For dividends or earnings, use the corresponding column as the close argument.
+- Calculate window size considering the time period of the data, taking into account the fact that the time period of the data is %s.
+- The user can give window size either just an int number or a time period, such as a month. In the second case, you will need to calculate the window size taking into account the current data frequency.
+- Some indicators require upper, lower, and middle values (_hband, _lband, _mband).
+
+3. Indicator Storage:
+- Make unified code by default. For example, if you are asked to calculate rsi for each symbol, then it is better to fill out the dict by looping through all the symbols.are asked to calculate rsi for each symbol, then it is better to fill out the dict by looping through all the symbols.
+- Place indicators in separate dictionaries, not in Dataframe columns.
+
+4. Optimization Parameters:
+- The user can explicitly request certain variables as optimization parameters. Mentioning a variable or assigning a value to a variable is not an explicit indication to make the variable a parameter. Only a direct instruction, such as “I want to make something a parameter,” is an explicit instruction to make a parameter.
+- To designate a variable as a parameter in Python, add "# parameter" at the end of the line where the variable is assigned a value using the "=" sign.
+- Parameter variables should be assigned once, remain constant during code execution, and be placed at the beginning of the code.
+- They must be separate variables and not part of structures like lists or dicts.
+- Assign a suitable value if the user doesn't specify a value for the parameter, such as the default value for a function parameter.
+
+5. Variable Names and Libraries:
+- Variable names should be descriptive.
+- Use pandas, numpy, and sklearn if needed, but resulting indicators must be pd.Series with matching indexes to the original symbols. (This is related to indicator timeseries only. Variables for trading block should be simple)
+
+6. Currency Conversion:
+- To convert a symbol to another currency, use the convert_using_fx_rate function with parameters: data (pd.Series or pd.Dataframe), from_currency (str), and to_currency (str).
+- The function returns converted data with the same indexes.
+- Use the symbol_to_currency dictionary for convenience.
+
+Examples:
+
+1. Explicit setting of the parameter.
+User says "I want to make window size of rsi equal to 14 and make windows size a parameter.":
+window_size = 14 # parameter
+RSI_SPY = ta.momentum.rsi(SPY["close"], window=window_size)
+User says "I want to make window size of rsi equal to 14.":
+window_size = 14
+RSI_SPY = ta.momentum.rsi(SPY["close"], window=window_size)
+
+2. Parameterize the rsi indicator function:
+indicator_function = ta.momentum.rsi # parameter
+indicator_SPY = indicator_function(SPY["close"])
+
+3. Convert symbol "C" from USD to EUR.
+C_EUR = convert_using_fx_rate(data_by_symbol["C"], "USD", "EUR")
+
+4. Convert symbol "C" from USD to EUR using symbol_to_currency dictionary.
+C_EUR = convert_using_fx_rate(data_by_symbol["C"], symbol_to_currency["C"], "EUR")
+
+5. Calculate rsi for each tradable symbol:
+Preferred code(unified code):
+rsi = dict()
+for symbol in tradable_symbols:
+    rsi[symbol] = ta.momentum.rsi(symbol["close"])
+Non-preferred code:
+RSI_SPY = ta.momentum.rsi(SPY["close"])
+RSI_AAPL = ta.momentum.rsi(AAPL["close"])
+...
+RSI_GOOG = ta.momentum.rsi(GOOG["close"])
